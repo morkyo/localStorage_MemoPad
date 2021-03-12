@@ -9,6 +9,7 @@ save.addEventListener("click", function () {
 
 clear.addEventListener("click", function () {
   localStorage.removeItem("memo");
+  document.querySelector("#text_area").value = "";
   console.log("削除完了");
 });
 
