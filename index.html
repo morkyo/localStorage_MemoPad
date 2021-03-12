@@ -5,12 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>localStorage_MemoPad</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main>
-      <textarea id="text_area" style="width: 400px; height: 200px"></textarea>
-      <div id="save">save</div>
-      <div id="clear">clear</div>
+      <div class="wrap">
+        <div class="lines">
+          <div class="contents">
+            <textarea id="text_area" maxlength="420"></textarea>
+          </div>
+        </div>
+        <div class="holes hole-top"></div>
+        <div class="holes hole-middle"></div>
+        <div class="holes hole-bottom"></div>
+        <div class="action">
+          <div id="save" class="btn">Save</div>
+          <div id="clear" class="btn">Clear</div>
+        </div>
+      </div>
     </main>
     <script src="js/app.js"></script>
   </body>
